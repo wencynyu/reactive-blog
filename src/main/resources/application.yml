@@ -1,7 +1,5 @@
 spring:
-  datasource:
-    druid:
-      username: root
-      password: aa123456.
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/blogdb
+  r2dbc:
+    password: aa123456.
+    username: root
+    url: r2dbc:mysql://localhost:3306/blogdb?useUnicode=true&characterEncoding=UTF-8
