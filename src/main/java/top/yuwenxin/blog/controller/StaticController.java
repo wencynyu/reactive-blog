@@ -32,8 +32,8 @@ public class StaticController {
         client.sql("select * from t_demo")
                 .map(row -> {
                     Demo demo = new Demo();
-                    demo.setId((Long)row.get("id"));
-                    demo.setName((String)row.get("name"));
+                    demo.setId((Long) row.get("id"));
+                    demo.setName((String) row.get("name"));
                     return demo;
                 })
                 .all()
